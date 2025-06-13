@@ -1,0 +1,18 @@
+{
+  "extends": "./tsconfig.app.json",
+  "compilerOptions": {
+    "types": ["vitest"],
+    "noEmit": true,
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["src/*"]
+    }
+  },
+  "include": [
+    "test/setup.ts",
+    "test/**/*.test.ts",
+    "test/**/*.test.tsx",
+    "src/**/*.test.ts",
+    "src/**/*.test.tsx"
+  ]
+}
