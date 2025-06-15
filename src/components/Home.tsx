@@ -6,7 +6,7 @@ interface HomeProps {
 
 export default function Home({ className }: HomeProps) {
   return (
-    <section className={className}>
+    <section className={className} id="home">
       <Heading
         label="Little Lemon"
         level={1}
