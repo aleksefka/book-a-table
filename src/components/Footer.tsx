@@ -1,7 +1,8 @@
 import { FOOTER_NAVTREE_DEFINITION } from "../constants";
 import { useTheme } from "../contexts/ThemeContext";
-import Logo from "./Logo";
-import NavItemList from "./NavItemList";
+import Heading from "./units/Heading";
+import Logo from "./units/Logo";
+import NavItemList from "./units/NavItemList";
 
 export default function Footer() {
   const theme = useTheme();
@@ -19,7 +20,7 @@ export default function Footer() {
                   .toLowerCase()
                   .replace(" ", "_")}`}
               >
-                <h5>{item.treeHeading}</h5>
+                <Heading level={5} label={item.treeHeading} />
                 <NavItemList
                   navItemListDefinition={item.treeItems}
                   prefix="footer_nav_"

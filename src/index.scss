@@ -19,7 +19,6 @@ body {
   background-color: var(--tertiary-light-color);
 
   header,
-  main,
   footer {
     padding: 2rem 15rem;
   }
@@ -33,15 +32,6 @@ body {
     list-style: none;
     margin: 0;
     padding: 0;
-  }
-
-  h1,
-  h2,
-  h3,
-  h4,
-  h5,
-  h6 {
-    font-family: var(--headline-font);
   }
 
   header {
@@ -78,6 +68,28 @@ body {
 
       div {
         padding: 0 1rem;
+      }
+    }
+  }
+
+  main {
+    padding: 0;
+
+    .main__section {
+      padding: 2rem 15rem;
+
+      .section__heading {
+        font-size: xx-large;
+        font-family: var(--headline-font-family);
+      }
+    }
+
+    .main__section--dark {
+      background-color: var(--primary-dark-color);
+      color: var(--tertiary-light-color);
+
+      .text--highlighted {
+        color: var(--primary-light-color);
       }
     }
   }

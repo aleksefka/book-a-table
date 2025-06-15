@@ -1,6 +1,6 @@
 import { NAVBAR_DEFINITION } from "../constants";
-import Logo from "./Logo";
-import NavItemList from "./NavItemList";
+import Logo from "./units/Logo";
+import NavItemList from "./units/NavItemList";
 
 export default function Header() {
   return (

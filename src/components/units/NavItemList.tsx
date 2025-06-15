@@ -1,4 +1,4 @@
-import type { NavItemDefinition } from "../types";
+import type { NavItemDefinition } from "../../types";
 
 type NavItemListProps = {
   navItemListDefinition: NavItemDefinition[];

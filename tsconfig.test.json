@@ -1,7 +1,7 @@
 {
   "extends": "./tsconfig.app.json",
   "compilerOptions": {
-    "types": ["vitest"],
+    "types": ["vitest", "react"],
     "noEmit": true,
     "baseUrl": ".",
     "paths": {
